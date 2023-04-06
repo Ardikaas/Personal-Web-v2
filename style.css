@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+Font Weight
+0,100 = thin
+0,200 = extra light
+0,300 = light
+0,400 = regular
+0,500 = medium
+0,600 = semibold
+0,700 = bold
+0,800 = extrabold
+0,900 = black
+1,100 = thin italic
+1,200 = extra light italic
+1,300 = light italic
+1,400 = regular italic
+1,500 = medium italic
+1,600 = semibold italic
+1,700 = bold italic
+1,800 = extrabold italic
+1,900 = black italic 
+*/
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 0.400;
+  background-color: var(--black-color);
+}
+
+:root{
+  --main-color: #F7C873;
+  --light-color: #FAEBCD;
+  --white-color: #F8F8F8;
+  --black-color: #1A1A1A;
+}
+
+body{
+  color: var(--main-color);
+}

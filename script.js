@@ -28,3 +28,16 @@ function change(){
     idx = 0;
   }
 }
+
+const btntoggle = document.querySelector('.resicon')
+const btntoggleicon = document.querySelector('.resicon i')
+const accor = document.querySelector('.accordion')
+
+btntoggle.onclick = function(){
+  accor.classList.toggle('open')
+  const isOpen = accor.classList.contains('open')
+
+  btntoggleicon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+}

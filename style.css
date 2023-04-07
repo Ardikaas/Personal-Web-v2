@@ -22,10 +22,18 @@ Font Weight
 1,900 = black italic 
 */
 
+a{
+  text-decoration: none;
+  color: #F7C873;
+
+}
+
 html{
   font-family: 'Montserrat', sans-serif;
   font-weight: 0.400;
   background-color: var(--black-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root{
@@ -36,5 +44,95 @@ html{
 }
 
 body{
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 20px;
+  /* height: 50px; */
+}
+
+header>a{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white-color);
+  border-radius: 15px;
+  padding: 5px;
+  /* display: flex; */
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+header>a:hover{
   color: var(--main-color);
+}
+
+.center{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 2s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+h2{
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+.text .head{
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.hidden-text{
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--main-color);
+  animation: ani1 6s infinite;
+}
+
+@keyframes ani1{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+@media(prefers-reduce-motion){
+  .hidden{
+    transition: none;
+  }
 }

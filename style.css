@@ -17,6 +17,7 @@ body{
   --light-color: #FAEBCD;
   --white-color: #F8F8F8;
   --black-color: #1A1A1A;
+  --softblack-color: #242120;
 }
 
 a{
@@ -191,7 +192,72 @@ h2{
 /* Home */
 
 /* About Me */
-
+.aboutme{
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: var(--softblack-color);
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 20px;
+}
+.about h2{
+  font-weight: 800;
+}
+.who{
+  display: flex;
+  flex-direction: column;
+}
+.who-text h6{
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--white-color);
+}
+.batas{
+  display: flex;
+}
+.who-text h4{
+  font-weight: 600;
+  color: var(--white-color);
+  box-sizing: border-box;
+  background-color: var(--main-color);
+  padding: 5px;
+  font-size: 1.7rem;
+  display: inline-block;
+}
+.who-text h5{
+  font-weight: 700;
+  /* padding-bottom: calc(1.7rem + 25px); */
+  color: var(--white-color);
+  font-size: 1rem;
+}
+.who-text p{
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--white-color);
+}
+.socialmedia{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  /* justify-content: center; */
+}
+.socialmedia span{
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+.socialmedia a{
+  color: var(--white-color);
+}
 /* About Me */
 
 /* Web Animation */
@@ -257,6 +323,10 @@ footer {
   }
   .accordion{
     display: block;
+  }
+  .card{
+    flex-direction: column;
+    align-items: unset;
   }
 }
 @media(max-width: 576px){

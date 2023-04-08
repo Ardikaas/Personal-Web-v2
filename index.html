@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Ardikaas</title>
@@ -44,24 +45,28 @@
       </div>
     </div>
   </div>
-  <div class="hidden-right center">
+  <div class="hidden-right">
     <div class="card">
       <div class="about">
         <h2>About Me</h2>
         <div class="skill-bar">
-          
+
         </div>
       </div>
-      <div class="foto">
-        <img src="" alt="Ardikaas">
-      </div>
+      <picture class="foto">
+        <source media="(min-width: 992px)" srcset="assets/400x720.png">
+        <source media="(min-width: 576px)" srcset="assets/720x400.png">
+        <img src="assets/540x400.png" alt="Ardikaas">
+      </picture>
       <div class="who">
-        <h6>WHO AM I</h6>
-        <h4>ARDIKA AJI S.</h4>
-        <h5>Junior Web Designer</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi amet molestiae enim labore. Voluptates quibusdam aspernatur odit nemo culpa corrupti, eum ratione minima excepturi eaque, mollitia officia iusto totam nostrum!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam maxime, minus ullam pariatur, ab iusto repellat necessitatibus consequuntur nesciunt esse dolores facere non natus praesentium, odit adipisci debitis mollitia!</p>
-        <div class="socilamedia">
+        <div class="who-text">
+          <h6>WHO AM I</h6>
+          <h4>ARDIKA AJI S.</h4>
+          <h5>Junior Web Designer</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi amet molestiae enim labore. Voluptates quibusdam aspernatur odit nemo culpa corrupti, eum ratione minima excepturi eaque, mollitia officia iusto totam nostrum!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam maxime, minus ullam pariatur, ab iusto repellat necessitatibus consequuntur nesciunt esse dolores facere non natus praesentium, odit adipisci debitis mollitia!</p>
+        </div>
+        <div class="socialmedia">
           <span>Follow Me : </span>
           <a href="#">
             <i class="fa-brands fa-instagram"></i>

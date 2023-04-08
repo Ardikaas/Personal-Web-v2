@@ -1,37 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* 
-Font Weight
-0,100 = thin
-0,200 = extra light
-0,300 = light
-0,400 = regular
-0,500 = medium
-0,600 = semibold
-0,700 = bold
-0,800 = extrabold
-0,900 = black
-1,100 = thin italic
-1,200 = extra light italic
-1,300 = light italic
-1,400 = regular italic
-1,500 = medium italic
-1,600 = semibold italic
-1,700 = bold italic
-1,800 = extrabold italic
-1,900 = black italic 
-*/
-
-a{
-  text-decoration: none;
-}
-
 html{
   font-family: 'Montserrat', sans-serif;
   font-weight: 0.400;
   background-color: var(--black-color);
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+body{
+  margin: 0;
 }
 
 :root{
@@ -41,10 +19,11 @@ html{
   --black-color: #1A1A1A;
 }
 
-body{
-  margin: 0;
+a{
+  text-decoration: none;
 }
 
+/* Nav Bar */
 /* .navbar{
   position: sticky;
   display: flex;
@@ -57,16 +36,13 @@ body{
   right: 0px;
   padding: 20px;
 } */
-
 li{
   list-style: none;
 }
-
 header{
   position: relative;
   padding: 0.2rem;
 }
-
 .navbar{
   width: 100%;
   height: 60px;
@@ -76,25 +52,21 @@ header{
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar .logo a{
   color: var(--white-color);
   font-size: 1.5rem;
   font-weight: 600;
 }
-
 .navbar .links{
   display: flex;
   gap: 2rem;
 }
-
 .navbar .resicon{
   color: var(--white-color);
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
 }
-
 .links li a{
   color: var(--white-color);
   font-size: 1rem;
@@ -102,14 +74,12 @@ header{
 .links li a:hover{
   color: var(--main-color);
 }
-
 .navbar > .resicon{
   color: var(--white-color);
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
 }
-
 .accordion{
   display: none;
   position: absolute;
@@ -124,18 +94,15 @@ header{
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .accordion.open{
   height: 167px;
 }
-
 .accordion li{
   padding: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .accordion li a{
   color: var(--white-color);
   font-size: 1rem;
@@ -143,7 +110,9 @@ header{
 .accordion li a:hover{
   color: var(--main-color);
 }
+/* Nav Bar */
 
+/* Home */
 .home{
   display: flex;
   flex-direction: column;
@@ -151,70 +120,34 @@ header{
   align-items: center;
   text-align: center;
 }
-
-/* .navbar>a{
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--white-color);
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.navbar>a:hover{
-  color: var(--main-color);
-} */
-
 .center{
   display: grid;
   place-items: center;
   align-content: center;
   min-height: 100vh;
 }
-
-.hidden{
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(-100%);
-  transition: all 2s;
-}
-
-.show{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
-}
-
 h2{
   font-size: 3rem;
   font-weight: 400;
   color: var(--white-color);
 }
-
 .text .head{
   color: var(--white-color);
   font-weight: 600;
   font-size: 3rem;
 }
-
 .hidden-text{
   font-size: 3rem;
   font-weight: 600;
   color: var(--main-color);
   animation: ani 6s infinite;
 }
-
 .button{
   padding-top: 25px;
   gap: 25px;
   display: flex;
   flex-direction: row;
 }
-
 .btn1{
   color: var(--white-color);
   border: 1px solid var(--white-color);
@@ -244,7 +177,6 @@ h2{
   border: 1px solid var(--main-color);
   background-color: var(--main-color);
 }
-
 @keyframes ani{
   0%{
     opacity: 0;
@@ -256,14 +188,46 @@ h2{
     opacity: 0;
   }
 }
+/* Home */
 
+/* About Me */
 
+/* About Me */
+
+/* Web Animation */
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 2s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+.hidden-right{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show-right{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 @media(prefers-reduce-motion){
   .hidden{
     transition: none;
   }
+  .hidden-right{
+    transition: none;
+  }
 }
+/* Web Animation */
 
+/* footer */
 footer {
   position: absolute;
   display: flex;
@@ -274,7 +238,6 @@ footer {
   background-color: var(--light-color);
   color: var(--main-color);
 }
-
 @media print{
   footer{
     display: block;
@@ -282,7 +245,9 @@ footer {
     bottom: 0;
   }
 }
+/* footer */
 
+/* responsive section */
 @media(max-width: 992px){
   .navbar .links{
     display: none;
@@ -290,15 +255,14 @@ footer {
   .navbar > .resicon{
     display: block;
   }
-
   .accordion{
     display: block;
   }
 }
-
 @media(max-width: 576px){
   .accordion{
     left: 2rem;
     width: unset;
   }
 }
+/* responsive section */

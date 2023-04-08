@@ -15,6 +15,19 @@ let observer = new IntersectionObserver((entries) => {
 let hidden = document.querySelectorAll('.hidden');
 hidden.forEach((el) => observer.observe(el));
 
+let observerR = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting){
+      entry.target.classList.add('show-right');
+    }else{
+      entry.target.classList.remove('show-right');
+    }
+  });
+}); 
+
+let hiddenR = document.querySelectorAll('.hidden-right');
+hiddenR.forEach((el) => observerR.observe(el));
+
 var text = ["Ardikaas", "Amateur Designer", "Junior Web Designer"];
 var idx = 0;
 var ubah = document.getElementById('change-text');

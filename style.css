@@ -212,6 +212,76 @@ h2{
 .about h2{
   font-weight: 800;
 }
+.skill-bar h3{
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--white-color);
+}
+.bar{
+  background: var(--black-color);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 5px;
+  display: block;
+  box-shadow:  0 0.5px 1.5px #161616, 0 0.5px 1px #1e1e1e;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.bar:hover{
+  box-shadow:  0 7px 14px rgba(22, 22, 22, 1.13), 0 5px 5px rgba(30, 30, 30, 0);
+}
+.bar span{
+  height: 5px;
+  float: left;
+  background: var(--main-color);
+}
+.html{
+  width: 75%;
+  animation: html 3s;
+}
+.css{
+  width: 70%;
+  animation: css 3s;
+}
+.js{
+  width: 45%;
+  animation: js 3s;
+}
+.ps{
+  width: 85%;
+  animation: ps 3s;
+}
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 75%;
+  }
+}
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes js {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 45%;
+  }
+}
+@keyframes ps {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
 .who{
   display: flex;
   flex-direction: column;
@@ -250,7 +320,6 @@ h2{
 }
 .who-text h5{
   font-weight: 700;
-  /* padding-bottom: calc(1.7rem + 25px); */
   color: var(--white-color);
   font-size: 1rem;
 }
@@ -264,7 +333,6 @@ h2{
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  /* justify-content: center; */
 }
 .socialmedia span{
   color: var(--main-color);
@@ -273,6 +341,9 @@ h2{
 }
 .socialmedia a{
   color: var(--white-color);
+}
+.socialmedia a:hover{
+  color: var(--main-color);
 }
 /* About Me */
 
@@ -342,6 +413,9 @@ footer {
   }
   .socialmedia{
     padding-bottom: 0;
+  }
+  .skill-bar{
+    width: 450px;
   }
 }
 @media(max-width: 992px){

@@ -384,12 +384,42 @@ h2{
 footer {
   position: absolute;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   left: 0px;
   right: 0px;
-  background-color: var(--light-color);
+  background-color: var(--black-color);
+}
+footer span{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+footer p{
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding-bottom: 40px;
+}
+.socia-foot{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.socia-foot a{
+  font-size: 1rem;
+  background-color: var(--softblack-color);
+  padding: 10px;
+  border-radius: 10px;
   color: var(--main-color);
+}
+.socia-foot a:hover{
+  color: var(--white-color);
+  background-color: var(--main-color);
+  transform: bac;
 }
 @media print{
   footer{

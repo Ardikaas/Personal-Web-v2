@@ -198,6 +198,7 @@ h2{
 }
 .card{
   display: flex;
+  float: center;
   flex-direction: row;
   align-items: center;
   align-content: center;
@@ -214,6 +215,21 @@ h2{
 .who{
   display: flex;
   flex-direction: column;
+}
+.foto .normal{
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+}
+.foto .medium{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.foto .small{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 .who-text h6{
   font-weight: 400;
@@ -314,6 +330,20 @@ footer {
 /* footer */
 
 /* responsive section */
+@media(min-width: 992px){
+  .normal{
+    display: unset;
+  }
+  .medium{
+    display: none;
+  }
+  .small{
+    display: none;
+  }
+  .socialmedia{
+    padding-bottom: 0;
+  }
+}
 @media(max-width: 992px){
   .navbar .links{
     display: none;
@@ -328,11 +358,32 @@ footer {
     flex-direction: column;
     align-items: unset;
   }
+  .socialmedia{
+    padding-bottom: 50px;
+  }
+  .normal{
+    display: none;
+  }
+  .medium{
+    display: unset;
+  }
+  .small{
+    display: none;
+  }
 }
 @media(max-width: 576px){
   .accordion{
     left: 2rem;
     width: unset;
+  }
+  .normal{
+    display: none;
+  }
+  .small{
+    display: unset;
+  }
+  .medium{
+    display: none;
   }
 }
 /* responsive section */

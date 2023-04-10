@@ -347,38 +347,51 @@ h2{
 }
 /* About Me */
 
-/* Web Animation */
-.hidden{
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(-100%);
-  transition: all 2s;
+/* Portofolio */
+.porto{
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* justify-items: center; */
+  /* align-content: center; */
 }
-.show{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
+.porto h2{
+  color: var(--white-color);
+  font-weight: 800;
 }
-.hidden-right{
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
+.gall-con{
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
 }
-.show-right{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+.gallery{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-@media(prefers-reduce-motion){
-  .hidden{
-    transition: none;
-  }
-  .hidden-right{
-    transition: none;
-  }
+.porto .gall-con .gallery{
+  width: 30%;
 }
-/* Web Animation */
+.porto .gall-con .gallery img{
+  width: 100%;
+  border-radius: 5px;
+}
+.btn-gall a{
+  display: none;
+  color: var(--white-color);
+  border-radius: 20px;
+  border: 1px solid var(--white-color);
+  padding: 20px;
+}
+.btn-gall a:hover{
+  color: var(--white-color);
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+/* Portofolio */
 
 /* footer */
 footer {
@@ -430,6 +443,39 @@ footer p{
 }
 /* footer */
 
+/* Web Animation */
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 2s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+.hidden-right{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show-right{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media(prefers-reduce-motion){
+  .hidden{
+    transition: none;
+  }
+  .hidden-right{
+    transition: none;
+  }
+}
+/* Web Animation */
+
 /* responsive section */
 @media(min-width: 992px){
   .normal{
@@ -446,6 +492,10 @@ footer p{
   }
   .skill-bar{
     width: 450px;
+  }
+  .porto .gall-con .gallery{
+    width: 100%;
+    /* height: auto; */
   }
 }
 @media(max-width: 992px){
@@ -488,6 +538,16 @@ footer p{
   }
   .medium{
     display: none;
+  }
+  .hide-gall{
+    display: none;
+  }
+  .porto .gall-con .gallery{
+    width: unset;
+    /* height: auto; */
+  }
+  .btn-gall a{
+    display: unset;
   }
 }
 /* responsive section */

@@ -399,6 +399,44 @@ h2{
 }
 /* Portofolio */
 
+/* Contact */
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--softblack-color);
+  margin: 0;
+}
+.contact .contact-con{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contactperson{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.contactperson span{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--white-color);
+}
+.contactperson h6{
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+/* .form .email{
+  display: flex;
+  flex-direction: row;
+} */
+/* Contact */
+
 /* footer */
 footer {
   position: absolute;
@@ -501,8 +539,10 @@ footer p{
   }
   .porto .gall-con .gallery{
     width: 100%;
-    /* height: auto; */
   }
+  /* .contact{
+    width: 100%;
+  } */
 }
 @media(max-width: 992px){
   .navbar .links{

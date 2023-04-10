@@ -379,12 +379,18 @@ h2{
   width: 100%;
   border-radius: 5px;
 }
+.btn-gall{
+  padding: 40px;
+}
 .btn-gall a{
   display: none;
   color: var(--white-color);
   border-radius: 20px;
   border: 1px solid var(--white-color);
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .btn-gall a:hover{
   color: var(--white-color);

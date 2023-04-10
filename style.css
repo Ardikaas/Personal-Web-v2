@@ -43,6 +43,8 @@ li{
 header{
   position: relative;
   padding: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .navbar{
   width: 100%;
@@ -303,6 +305,8 @@ h2{
 }
 .who-text h6{
   font-weight: 400;
+  margin: 0;
+  padding-bottom: 5px;
   font-size: 1rem;
   color: var(--white-color);
 }
@@ -310,6 +314,7 @@ h2{
   display: flex;
 }
 .who-text h4{
+  margin: 0;
   font-weight: 600;
   color: var(--white-color);
   box-sizing: border-box;
@@ -319,11 +324,16 @@ h2{
   display: inline-block;
 }
 .who-text h5{
+  margin: 0;
+  padding-top: 30px;
   font-weight: 700;
   color: var(--white-color);
   font-size: 1rem;
 }
 .who-text p{
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 50px;
   font-weight: 500;
   font-size: 0.8rem;
   color: var(--white-color);
@@ -350,7 +360,9 @@ h2{
 /* Portofolio */
 .porto{
   padding-left: 50px;
+  padding-top: 50px;
   padding-right: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,14 +375,14 @@ h2{
   font-weight: 800;
 }
 .gall-con{
-  gap: 15px;
+  gap: 30px;
   display: flex;
   flex-direction: row;
 }
 .gallery{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
 }
 .porto .gall-con .gallery{
   width: 30%;
@@ -404,13 +416,26 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: var(--softblack-color);
-  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+.contact-con{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact h2{
+  color: var(--white-color);
+  font-weight: 800;
 }
 .contact .contact-con{
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 50px;
 }
 .contactperson{
   display: flex;
@@ -421,20 +446,62 @@ h2{
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--white-color);
+  margin-bottom: 1rem;
+}
+.contact-subtittle span{
+  color: var(--main-color);
 }
 .contactperson h6{
   color: var(--main-color);
   font-weight: 500;
   font-size: 0.7rem;
+  margin: 0;
 }
-.form{
+form{
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* width: 500px; */
 }
-/* .form .email{
+.email{
   display: flex;
-  flex-direction: row;
-} */
+  gap: 20px;
+  /* width: 500px; */
+}
+form input{
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+form textarea{
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+form button{
+  justify-content: center;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+form button:hover{
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
 /* Contact */
 
 /* footer */
@@ -540,9 +607,13 @@ footer p{
   .porto .gall-con .gallery{
     width: 100%;
   }
-  /* .contact{
-    width: 100%;
-  } */
+  .contact-con{
+    flex-direction: column;
+    /* width: 100%; */
+  }
+  .email{
+    flex-direction: row;
+  }
 }
 @media(max-width: 992px){
   .navbar .links{
@@ -570,6 +641,12 @@ footer p{
   .small{
     display: none;
   }
+  .contact-con{
+    flex-direction: column;
+  }
+  .email{
+    flex-direction: row;
+  }
 }
 @media(max-width: 576px){
   .accordion{
@@ -594,6 +671,12 @@ footer p{
   }
   .btn-gall a{
     display: unset;
+  }
+  .contact-con{
+    flex-direction: column;
+  }
+  .email{
+    flex-direction: column;
   }
 }
 /* responsive section */

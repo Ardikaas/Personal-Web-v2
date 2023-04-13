@@ -25,18 +25,6 @@ a{
 }
 
 /* Nav Bar */
-/* .navbar{
-  position: sticky;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  padding: 20px;
-} */
 li{
   list-style: none;
 }
@@ -360,9 +348,9 @@ h2{
 /* Portofolio */
 .porto{
   padding-left: 50px;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-right: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -383,8 +371,6 @@ h2{
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-.porto .gall-con .gallery{
   width: 30%;
 }
 .porto .gall-con .gallery img{
@@ -413,90 +399,76 @@ h2{
 
 /* Contact */
 .contact{
+  padding: 50px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--softblack-color);
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-}
-.contact-con{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 .contact h2{
   color: var(--white-color);
   font-weight: 800;
 }
-.contact .contact-con{
+.contact-con{
+  gap: 25px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 50px;
+  align-content: center;
+  justify-content: center;
 }
-.contactperson{
+.rescontact{
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  gap: 10px;
+  /* width: 400px; */
 }
-.contactperson span{
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--white-color);
-  margin-bottom: 1rem;
+.con-text{
+  width: 100%;
 }
-.contact-subtittle span{
-  color: var(--main-color);
-}
-.contactperson h6{
-  color: var(--main-color);
+.con-text h6{
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 0.7rem;
-  margin: 0;
+  color: var(--main-color);
 }
-form{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* width: 500px; */
-}
-.email{
-  display: flex;
-  gap: 20px;
-  /* width: 500px; */
-}
-form input{
-  background-color: var(--black-color);
-  color: var(--white-color);
-  border: none;
-  padding: 10px;
-  border-radius: 20px;
+.con-text span{
   font-size: 0.8rem;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-}
-form textarea{
-  background-color: var(--black-color);
   color: var(--white-color);
-  border: none;
+  padding-bottom: 1rem;
+}
+input{
+  background-color: var(--black-color);
   padding: 10px;
+  border: none;
   border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--white-color);
+}
+textarea{
+  background-color: var(--black-color);
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--white-color);
 }
 form button{
-  justify-content: center;
   background-color: var(--main-color);
   color: var(--white-color);
-  padding: 10px;
-  border-radius: 20px;
-  display: inline-block;
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 form button:hover{
   background-color: var(--white-color);
@@ -607,12 +579,8 @@ footer p{
   .porto .gall-con .gallery{
     width: 100%;
   }
-  .contact-con{
-    flex-direction: column;
-    /* width: 100%; */
-  }
-  .email{
-    flex-direction: row;
+  .contact .contact-con .rescontact{
+    width: 400px;
   }
 }
 @media(max-width: 992px){
@@ -641,11 +609,13 @@ footer p{
   .small{
     display: none;
   }
-  .contact-con{
-    flex-direction: column;
+  .contact .contact-con .rescontact{
+    width: 300px;
   }
-  .email{
-    flex-direction: row;
+}
+@media(max-width: 690px){
+  .contact .contact-con .rescontact{
+    width: 250px;
   }
 }
 @media(max-width: 576px){
@@ -675,8 +645,13 @@ footer p{
   .contact-con{
     flex-direction: column;
   }
-  .email{
-    flex-direction: column;
+  .contact .contact-con .rescontact{
+    width: 300px;
+  }
+}
+@media(max-width: 342px){
+  .contact .contact-con .rescontact{
+    width: 250px;
   }
 }
 /* responsive section */

@@ -1,5 +1,9 @@
 function erorr(){
-  alert('uh oh sowething wrong with it')
+  alert('uh oh sowething wrong with it!')
+}
+
+function refresh(){
+  window.location.reload();
 }
 
 let observer = new IntersectionObserver((entries) => {

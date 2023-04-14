@@ -221,6 +221,7 @@ h2{
 }
 .bar span{
   height: 5px;
+  border-radius: 20px;
   float: left;
   background: var(--main-color);
 }

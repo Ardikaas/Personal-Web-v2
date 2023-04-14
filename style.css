@@ -226,19 +226,19 @@ h2{
 }
 .html{
   width: 75%;
-  animation: html 3s;
+  animation: html 6s;
 }
 .css{
   width: 70%;
-  animation: css 3s;
+  animation: css 6s;
 }
 .js{
   width: 45%;
-  animation: js 3s;
+  animation: js 6s;
 }
 .ps{
   width: 85%;
-  animation: ps 3s;
+  animation: ps 6s;
 }
 @keyframes html {
   0%{

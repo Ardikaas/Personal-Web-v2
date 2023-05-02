@@ -24,6 +24,21 @@ a{
   text-decoration: none;
 }
 
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--softblack-color); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--white-color); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}
+/* Scroll Bar */
+
 /* Nav Bar */
 li{
   list-style: none;

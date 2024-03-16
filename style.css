@@ -44,10 +44,15 @@ li{
   list-style: none;
 }
 header{
-  position: relative;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
   padding: 0.2rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: var(--black-color);
 }
 .navbar{
   width: 100%;

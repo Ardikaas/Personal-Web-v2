@@ -16,4 +16,4 @@ In essence, this portfolio website stands as a testament to my unwavering commit
 
 
 ## URL
-This portfolio website can be accessed through the secure and accessible URL: https://porto.ardikaas.repl.co
+This portfolio website can be accessed through the secure and accessible URL: https://ardikaas.github.io/Personal-Web-v2/
